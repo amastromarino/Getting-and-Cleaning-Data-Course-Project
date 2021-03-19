@@ -9,7 +9,7 @@ unzip(zipfile="./data/UCI_HAR.zip",exdir="./data")
 
 ##Read files
 ##Activity files
-activityTest <- read.table("./data/UCI HAR Dataset/test/y_test.txt", header = FALSE)
+activityTest <- read.table(file.path("./data/UCI HAR Dataset/test/y_test.txt"), header = FALSE)
 activityTrain <- read.table(file.path("./data/UCI HAR Dataset//train/y_train.txt"), header = FALSE)
 
 ##Subject files
